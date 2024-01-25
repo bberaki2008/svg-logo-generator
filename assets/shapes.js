@@ -41,11 +41,7 @@ class  Triangle extends Shapes{
 
 class  Square extends Shapes{
     generateSquare() {
-        return`
-        <svg width="300" height="200" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-        <rect x="50" y="50" height="200" width="200" fill="${this.logoBackgroundColor}"/>
-        ${super.setText()}
-        </svg>`
+        return `<svg width="300" height="200" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><rect x="50" y="50" height="200" width="200" fill="${this.logoBackgroundColor}"/>${super.setText()}</svg>`
     }
 }
 
