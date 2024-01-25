@@ -11,31 +11,19 @@ class Shapes{
 
 class Circle extends Shapes{
     generateCircle() {
-        return `
-        <svg width="300" height="200" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-        <circle cx="50%" cy="50%" r ="100" height="100%" width="100%" fill="${this.logoBackgroundColor}"/>
-        ${super.setText()}
-        </svg>`
+        return `<svg width="300" height="200" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><circle cx="50%" cy="50%" r ="100" height="100%" width="100%" fill="${this.logoBackgroundColor}"/>${super.setText()}</svg>`
     }
 } 
 
 class Rectangle extends Shapes{
     generateRectangle() {
-        return `
-        <svg width="300" height="200" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-        <rect x="50" y="50" height="200" width="250" fill="${this.logoBackgroundColor}"/>
-        ${super.setText()}
-        </svg>`
+        return `<svg width="300" height="200" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><rect x="50" y="50" height="200" width="250" fill="${this.logoBackgroundColor}"/>${super.setText()}</svg>`
     }
 }
 
 class  Triangle extends Shapes{
     generateTriangle() {
-        return`
-        <svg width="300" height="200" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-        <polygon height="100%" width="100%" points="0,200 300,200 150,0" fill="${this.logoBackgroundColor}"/>
-        ${super.setText()}
-        </svg>`
+        return`<svg width="300" height="200" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><polygon height="100%" width="100%" points="0,200 300,200 150,0" fill="${this.logoBackgroundColor}"/>${super.setText()}</svg>`
     }
 }
 
