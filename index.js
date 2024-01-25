@@ -1,8 +1,9 @@
+//imported inquirer, fs and shapes
 const inquirer = require('inquirer');
 const fs = require('fs');
 const {Triangle, Rectangle, Circle, Square} = require('./assets/shapes');
 
-//write validation or comment
+//generating questions using inquirer CML application
 inquirer
   .prompt([
     {
@@ -29,6 +30,7 @@ inquirer
 
   ])
   .then((response) => {
+    //checking the response shape based on that it is going to generate the shape
     switch (`${response.logoShape}`){
       case 'Square':
         const square =new Square(response.logoName, response.logoTextColor, response.logoBackgroundColor)
@@ -50,4 +52,3 @@ inquirer
         break;
     }
   }); 
-
